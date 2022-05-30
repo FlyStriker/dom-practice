@@ -17,6 +17,7 @@
   <div class="header">
       <div class="header_item">
           <img src="https://img.freepik.com/free-vector/note-music-logo-design_93835-645.jpg" alt="logo" class="logo">  
+          <a onclick="toggleBurger()" id="burger_toggle_button" class="burger_toggle_button"><span></span></a>
            <div class="button_menu">
              <button class="tab_links" onclick="openInstrument(event, 'Violin')"  id="defaultOpen">Скрипка</button>
              <button class="tab_links" onclick="openInstrument(event, 'Guitar')">Гитара</button>
@@ -25,7 +26,16 @@
              <button class="tab_links" onclick="openInstrument(event, 'Accordion')">Аккордеон</button>
              <button class="tab_links" onclick="openInstrument(event, 'Royal')">Рояль</button>
            </div>
-        </div>    
+
+           <div id="button_menu_mobile" class="button_menu_mobile">
+            <button class="tab_links" onclick="openInstrument(event, 'Violin')"  id="defaultOpen">Скрипка</button>
+            <button class="tab_links" onclick="openInstrument(event, 'Guitar')">Гитара</button>
+            <button class="tab_links" onclick="openInstrument(event, 'Saxophone')">Саксофон</button>
+            <button class="tab_links" onclick="openInstrument(event, 'Drum')">Барабан</button>
+            <button class="tab_links" onclick="openInstrument(event, 'Accordion')">Аккордеон</button>
+            <button class="tab_links" onclick="openInstrument(event, 'Royal')">Рояль</button>
+          </div>
+        </div> 
   </div>
 
 
