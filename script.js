@@ -1,3 +1,4 @@
+
 document.getElementById("defaultOpen").click();
 
 function openInstrument(active, InstrumentName) {
@@ -8,10 +9,13 @@ tab_content = document.getElementsByClassName("tab_content");
      tab_content[i].style.display = "none";
 }
 
+
 tab_links = document.getElementsByClassName("tab_links");
   for (i = 0; i < tab_links.length; i++) {
      tab_links[i].className = tab_links[i].className.replace("active", "");
+      // tab_links[i].classList.add("active);
 }
+
 
 document.getElementById(InstrumentName).style.display = "block";
  active.currentTarget.className += "active";
