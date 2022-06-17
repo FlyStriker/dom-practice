@@ -1,22 +1,5 @@
+import toggleBurger from './toggle-burger.js';
+import assignHandlersToTabs from './tabs.js';
 
-document.getElementById("defaultOpen").click();
-
-function openInstrument(active, InstrumentName) {
-    let i, tab_content, tab_links;
-
-tab_content = document.getElementsByClassName("tab_content");
-  for (i = 0; i < tab_content.length; i++) {
-     tab_content[i].style.display = "none";
-}
-
-
-tab_links = document.getElementsByClassName("tab_links");
-  for (i = 0; i < tab_links.length; i++) {
-     tab_links[i].className = tab_links[i].className.replace("active", "");
-      // tab_links[i].classList.add("active);
-}
-
-
-document.getElementById(InstrumentName).style.display = "block";
- active.currentTarget.className += "active";
-}
+document.getElementById('burger_toggle_button').addEventListener('click', () => toggleBurger("button_menu_mobile"))
+assignHandlersToTabs();
